@@ -4,64 +4,31 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
   <title>DJ</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-   body {
-  background-image: url('assets/background.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 50px; 
-
-}
-
-    html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        body {
-            display: table;
-        }
-
-        .my-block {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-a:link {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: rgba(0, 0, 0, 0.289);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: none;
-}
-    </style>
 <body>
 
-    <div class="my-block">
-
-        <audio controls autoplay mute loop hidden>
-          <source src="assets/loading_screen_1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio>
-
+  <div class="video-wrapper">
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="assets/background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+  <div class="hero">
+       <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">music</a></li>
+          <li><a href="#">store</a></li>
+          <li><a href="#">info</a></li>
+        </ul>
+       </nav>   
+  </div>
+  <div>
+    <audio controls autoplay loop mute hidden>
+    <source src="assets/loading_screen_3.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  </div>
 </body>
 </html>
